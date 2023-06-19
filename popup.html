@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instabat</title>
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <style>
+    body {
+      font-family: Helvetica;
+      background-color: #241c29;
+      color: #ddd;
+      margin: 0;
+      padding: 20px;
+      min-width: 300px;
+    }
+
+    h1 {
+      color: #88849f;
+      text-align: center;
+    }
+
+    h3 {
+      color: #ccc;
+      text-align: center;
+    }
+
+    p {
+      color: #ccc;
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #606181;
+;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    label {
+      text-align: center;
+      justify-content: center;
+      color: #ccc;
+    }
+
+    button:hover {
+      background-color: #817691;
+    }
+
+    .input {
+      justify-content: center;
+      text-align: center;
+    }
+
+    #loading {
+      display: none;
+      margin: 20px auto;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border-top: 4px solid #ccc;
+      border-right: 4px solid #ccc;
+      border-bottom: 4px solid #ccc;
+      border-left: 4px solid transparent;
+      animation: spin 1s infinite linear;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #progress {
+      text-align: center;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <h1>Instabat</h1>
+  <h3>An Instagram Unfollower Checker (educational purposes only)</h3>
+  <p>Note: Make sure you are logged into Instagram on your browser</p>
+  <label for="usernameInput" style="display: flex; align-items: center;">Enter your Instagram username:</label>
+  <div class="input"><input type="text" id="usernameInput"></div>
+  <button id="getUnfollowers">Get Unfollowers</button>
+  <div id="loading"></div>
+  <div id="progress"></div>
+  <button id="downloadButton" style="display: none;">Download Unfollowers</button>
+  <script src="popup.js"></script>
+</body>
+</html>
