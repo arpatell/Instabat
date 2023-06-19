@@ -5,4 +5,5 @@ Steps:
 5) At the top left, you will see three options; select 'load unpacked'
 6) Upload the extracted Instabat folder
 7) Log in to your Instagram account
+
 Now you will be able to use Instabat from the extensions button on your browser
