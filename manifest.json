@@ -13,7 +13,7 @@
     }
   ],
   "background": {
-    "scripts": ["popup.js"],
+    "service_worker": ["popup.js"],
     "persistent": false
   },
   "action": {
