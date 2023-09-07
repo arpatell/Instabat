@@ -13,8 +13,7 @@
     }
   ],
   "background": {
-    "service_worker": ["popup.js"],
-    "persistent": false
+    "service_worker": "popup.js"
   },
   "action": {
     "default_popup": "popup.html"
