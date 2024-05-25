@@ -115,9 +115,6 @@ document.addEventListener('DOMContentLoaded', function() {
     downloadLink.setAttribute("href", encodedUri);
     downloadLink.setAttribute("download", "unfollowers.csv");
     downloadLink.style.display = "none";
-    document.body.appendChild(downloadLink);
-
     downloadLink.click();
-    document.body.removeChild(downloadLink);
   });
 });
